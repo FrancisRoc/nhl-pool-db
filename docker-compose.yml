@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db:
+    build: .
+    image: frrocc/db:dev
+    container_name: nhlpoolhelper-db
+    volumes:
+      - ./scripts:/db/scripts
+    ports:
+      - "5555:5432"
