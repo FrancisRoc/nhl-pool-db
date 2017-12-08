@@ -4,7 +4,7 @@
 
   2. Add your upgrade script:
       ```
-      docker run -v $PWD:/db frrocc/docker-schema-evolution-manager sem-add new.sql
+      sem-add new.sql
       ```
   
   4. (Optional) Apply your new script localy
